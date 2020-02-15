@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09B70F9318E38A1CD65C0315 /* Pods_Kanji_FlashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003A74E21D88F75986458088 /* Pods_Kanji_FlashTests.framework */; };
+		6ECBC0D207B0F7ABCCA27767 /* Pods_Kanji_Flash_Kanji_FlashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7688BB5E4701F00C41878550 /* Pods_Kanji_Flash_Kanji_FlashUITests.framework */; };
+		9DF205CF82E924D9C764AEC3 /* Pods_Kanji_Flash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694C1F214F1E185BBAC6BB1C /* Pods_Kanji_Flash.framework */; };
+		FE712B6B23F546A90040CE2C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE712B6A23F546A90040CE2C /* NetworkManager.swift */; };
+		FE712B6D23F549000040CE2C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE712B6C23F549000040CE2C /* APIManager.swift */; };
+		FE75AAC123F5690A0000D1BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE75AAC023F569090000D1BC /* SceneDelegate.swift */; };
+		FE75AAFF23F5EAB20000D1BC /* KanjiList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE75AAFE23F5EAB20000D1BC /* KanjiList.storyboard */; };
+		FE75AB0123F5EAD20000D1BC /* KanjiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE75AB0023F5EAD20000D1BC /* KanjiListViewController.swift */; };
+		FE75AB0323F5EADF0000D1BC /* KanjiListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE75AB0223F5EADF0000D1BC /* KanjiListDataSource.swift */; };
+		FE75AB0523F5F2170000D1BC /* KanjiListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE75AB0423F5F2170000D1BC /* KanjiListCell.swift */; };
+		FE84043923F7AA280003EB9E /* KanjiHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84043823F7AA280003EB9E /* KanjiHomeViewController.swift */; };
+		FEE5C4A0238634D8007F5784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C49F238634D8007F5784 /* AppDelegate.swift */; };
+		FEE5C4A7238634D8007F5784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE5C4A5238634D8007F5784 /* Main.storyboard */; };
+		FEE5C4A9238634D9007F5784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE5C4A8238634D9007F5784 /* Assets.xcassets */; };
+		FEE5C4AC238634D9007F5784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE5C4AA238634D9007F5784 /* LaunchScreen.storyboard */; };
+		FEE5C4B7238634D9007F5784 /* Kanji_FlashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C4B6238634D9007F5784 /* Kanji_FlashTests.swift */; };
+		FEE5C4C2238634D9007F5784 /* Kanji_FlashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C4C1238634D9007F5784 /* Kanji_FlashUITests.swift */; };
+		FEE5C4D0238635AF007F5784 /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C4CF238635AF007F5784 /* Kanji.swift */; };
+		FEE5C4D22386367A007F5784 /* KanjiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C4D12386367A007F5784 /* KanjiDetailViewController.swift */; };
+		FEE5C4D423863A5B007F5784 /* KanjiDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C4D323863A5B007F5784 /* KanjiDetailDataSource.swift */; };
+		FEE5C4D623864002007F5784 /* KanjiDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C4D523864002007F5784 /* KanjiDetailCell.swift */; };
+		FEE5C4DA238670C3007F5784 /* UIStoryboard+KanjiFlash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C4D9238670C3007F5784 /* UIStoryboard+KanjiFlash.swift */; };
+		FEE5C4DC238670F4007F5784 /* UIViewController+KanjiFlash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C4DB238670F4007F5784 /* UIViewController+KanjiFlash.swift */; };
+		FEE5C4E023867C4D007F5784 /* KanjiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5C4DF23867C4D007F5784 /* KanjiManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEE5C4B3238634D9007F5784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEE5C494238634D8007F5784 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEE5C49B238634D8007F5784;
+			remoteInfo = "Kanji Flash";
+		};
+		FEE5C4BE238634D9007F5784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEE5C494238634D8007F5784 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEE5C49B238634D8007F5784;
+			remoteInfo = "Kanji Flash";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003A74E21D88F75986458088 /* Pods_Kanji_FlashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kanji_FlashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0483BEEDF80BA5FCED176C50 /* Pods-Kanji FlashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji FlashTests.debug.xcconfig"; path = "Target Support Files/Pods-Kanji FlashTests/Pods-Kanji FlashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C5970645C912ADF9EDBBAAE /* Pods-Kanji Flash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji Flash.release.xcconfig"; path = "Target Support Files/Pods-Kanji Flash/Pods-Kanji Flash.release.xcconfig"; sourceTree = "<group>"; };
+		694C1F214F1E185BBAC6BB1C /* Pods_Kanji_Flash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kanji_Flash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7688BB5E4701F00C41878550 /* Pods_Kanji_Flash_Kanji_FlashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kanji_Flash_Kanji_FlashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		792865B333FB0154F0460AA6 /* Pods-Kanji Flash-Kanji FlashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji Flash-Kanji FlashUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kanji Flash-Kanji FlashUITests/Pods-Kanji Flash-Kanji FlashUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DE7833C84BD4F5ADD1287B3 /* Pods-Kanji Flash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji Flash.debug.xcconfig"; path = "Target Support Files/Pods-Kanji Flash/Pods-Kanji Flash.debug.xcconfig"; sourceTree = "<group>"; };
+		F11F57E9A22AA5ABBB736966 /* Pods-Kanji Flash-Kanji FlashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji Flash-Kanji FlashUITests.release.xcconfig"; path = "Target Support Files/Pods-Kanji Flash-Kanji FlashUITests/Pods-Kanji Flash-Kanji FlashUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1F4BBBD551E0EEDEE5D6343 /* Pods-Kanji FlashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji FlashTests.release.xcconfig"; path = "Target Support Files/Pods-Kanji FlashTests/Pods-Kanji FlashTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE712B6A23F546A90040CE2C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FE712B6C23F549000040CE2C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FE75AAC023F569090000D1BC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE75AAFE23F5EAB20000D1BC /* KanjiList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KanjiList.storyboard; sourceTree = "<group>"; };
+		FE75AB0023F5EAD20000D1BC /* KanjiListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiListViewController.swift; sourceTree = "<group>"; };
+		FE75AB0223F5EADF0000D1BC /* KanjiListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiListDataSource.swift; sourceTree = "<group>"; };
+		FE75AB0423F5F2170000D1BC /* KanjiListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiListCell.swift; sourceTree = "<group>"; };
+		FE84043823F7AA280003EB9E /* KanjiHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiHomeViewController.swift; sourceTree = "<group>"; };
+		FEE5C49C238634D8007F5784 /* Kanji Flash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kanji Flash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEE5C49F238634D8007F5784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEE5C4A6238634D8007F5784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEE5C4A8238634D9007F5784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEE5C4AB238634D9007F5784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEE5C4AD238634D9007F5784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE5C4B2238634D9007F5784 /* Kanji FlashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kanji FlashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEE5C4B6238634D9007F5784 /* Kanji_FlashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji_FlashTests.swift; sourceTree = "<group>"; };
+		FEE5C4B8238634D9007F5784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE5C4BD238634D9007F5784 /* Kanji FlashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kanji FlashUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEE5C4C1238634D9007F5784 /* Kanji_FlashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji_FlashUITests.swift; sourceTree = "<group>"; };
+		FEE5C4C3238634D9007F5784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE5C4CF238635AF007F5784 /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
+		FEE5C4D12386367A007F5784 /* KanjiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailViewController.swift; sourceTree = "<group>"; };
+		FEE5C4D323863A5B007F5784 /* KanjiDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailDataSource.swift; sourceTree = "<group>"; };
+		FEE5C4D523864002007F5784 /* KanjiDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailCell.swift; sourceTree = "<group>"; };
+		FEE5C4D9238670C3007F5784 /* UIStoryboard+KanjiFlash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+KanjiFlash.swift"; sourceTree = "<group>"; };
+		FEE5C4DB238670F4007F5784 /* UIViewController+KanjiFlash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KanjiFlash.swift"; sourceTree = "<group>"; };
+		FEE5C4DF23867C4D007F5784 /* KanjiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEE5C499238634D8007F5784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF205CF82E924D9C764AEC3 /* Pods_Kanji_Flash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE5C4AF238634D9007F5784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B70F9318E38A1CD65C0315 /* Pods_Kanji_FlashTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE5C4BA238634D9007F5784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ECBC0D207B0F7ABCCA27767 /* Pods_Kanji_Flash_Kanji_FlashUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7C7AA72A57C0CDEEFEEC5AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DE7833C84BD4F5ADD1287B3 /* Pods-Kanji Flash.debug.xcconfig */,
+				4C5970645C912ADF9EDBBAAE /* Pods-Kanji Flash.release.xcconfig */,
+				792865B333FB0154F0460AA6 /* Pods-Kanji Flash-Kanji FlashUITests.debug.xcconfig */,
+				F11F57E9A22AA5ABBB736966 /* Pods-Kanji Flash-Kanji FlashUITests.release.xcconfig */,
+				0483BEEDF80BA5FCED176C50 /* Pods-Kanji FlashTests.debug.xcconfig */,
+				F1F4BBBD551E0EEDEE5D6343 /* Pods-Kanji FlashTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EBFD01029C53286EFAA3C507 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				694C1F214F1E185BBAC6BB1C /* Pods_Kanji_Flash.framework */,
+				7688BB5E4701F00C41878550 /* Pods_Kanji_Flash_Kanji_FlashUITests.framework */,
+				003A74E21D88F75986458088 /* Pods_Kanji_FlashTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEE5C493238634D8007F5784 = {
+			isa = PBXGroup;
+			children = (
+				FEE5C49E238634D8007F5784 /* Kanji Flash */,
+				FEE5C4B5238634D9007F5784 /* Kanji FlashTests */,
+				FEE5C4C0238634D9007F5784 /* Kanji FlashUITests */,
+				FEE5C49D238634D8007F5784 /* Products */,
+				B7C7AA72A57C0CDEEFEEC5AA /* Pods */,
+				EBFD01029C53286EFAA3C507 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEE5C49D238634D8007F5784 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5C49C238634D8007F5784 /* Kanji Flash.app */,
+				FEE5C4B2238634D9007F5784 /* Kanji FlashTests.xctest */,
+				FEE5C4BD238634D9007F5784 /* Kanji FlashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEE5C49E238634D8007F5784 /* Kanji Flash */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5C4D7238670A4007F5784 /* Shared */,
+				FEE5C49F238634D8007F5784 /* AppDelegate.swift */,
+				FE75AAC023F569090000D1BC /* SceneDelegate.swift */,
+				FEE5C4A5238634D8007F5784 /* Main.storyboard */,
+				FE75AAFE23F5EAB20000D1BC /* KanjiList.storyboard */,
+				FEE5C4A8238634D9007F5784 /* Assets.xcassets */,
+				FEE5C4AA238634D9007F5784 /* LaunchScreen.storyboard */,
+				FEE5C4AD238634D9007F5784 /* Info.plist */,
+				FEE5C4CF238635AF007F5784 /* Kanji.swift */,
+				FE84043823F7AA280003EB9E /* KanjiHomeViewController.swift */,
+				FE75AB0023F5EAD20000D1BC /* KanjiListViewController.swift */,
+				FE75AB0223F5EADF0000D1BC /* KanjiListDataSource.swift */,
+				FE75AB0423F5F2170000D1BC /* KanjiListCell.swift */,
+				FEE5C4D12386367A007F5784 /* KanjiDetailViewController.swift */,
+				FEE5C4D323863A5B007F5784 /* KanjiDetailDataSource.swift */,
+				FEE5C4D523864002007F5784 /* KanjiDetailCell.swift */,
+				FEE5C4DF23867C4D007F5784 /* KanjiManager.swift */,
+				FE712B6A23F546A90040CE2C /* NetworkManager.swift */,
+				FE712B6C23F549000040CE2C /* APIManager.swift */,
+			);
+			path = "Kanji Flash";
+			sourceTree = "<group>";
+		};
+		FEE5C4B5238634D9007F5784 /* Kanji FlashTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5C4B6238634D9007F5784 /* Kanji_FlashTests.swift */,
+				FEE5C4B8238634D9007F5784 /* Info.plist */,
+			);
+			path = "Kanji FlashTests";
+			sourceTree = "<group>";
+		};
+		FEE5C4C0238634D9007F5784 /* Kanji FlashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5C4C1238634D9007F5784 /* Kanji_FlashUITests.swift */,
+				FEE5C4C3238634D9007F5784 /* Info.plist */,
+			);
+			path = "Kanji FlashUITests";
+			sourceTree = "<group>";
+		};
+		FEE5C4D7238670A4007F5784 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5C4D8238670AC007F5784 /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FEE5C4D8238670AC007F5784 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5C4D9238670C3007F5784 /* UIStoryboard+KanjiFlash.swift */,
+				FEE5C4DB238670F4007F5784 /* UIViewController+KanjiFlash.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEE5C49B238634D8007F5784 /* Kanji Flash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE5C4C6238634D9007F5784 /* Build configuration list for PBXNativeTarget "Kanji Flash" */;
+			buildPhases = (
+				8FA85B62338A0335CA50107D /* [CP] Check Pods Manifest.lock */,
+				FEE5C498238634D8007F5784 /* Sources */,
+				FEE5C499238634D8007F5784 /* Frameworks */,
+				FEE5C49A238634D8007F5784 /* Resources */,
+				A6EF80D4E70E1AD0E5BF410E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kanji Flash";
+			productName = "Kanji Flash";
+			productReference = FEE5C49C238634D8007F5784 /* Kanji Flash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEE5C4B1238634D9007F5784 /* Kanji FlashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE5C4C9238634D9007F5784 /* Build configuration list for PBXNativeTarget "Kanji FlashTests" */;
+			buildPhases = (
+				2CC1F23E31A170BDDA71583C /* [CP] Check Pods Manifest.lock */,
+				FEE5C4AE238634D9007F5784 /* Sources */,
+				FEE5C4AF238634D9007F5784 /* Frameworks */,
+				FEE5C4B0238634D9007F5784 /* Resources */,
+				A9F96F2CCB440906860A9767 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEE5C4B4238634D9007F5784 /* PBXTargetDependency */,
+			);
+			name = "Kanji FlashTests";
+			productName = "Kanji FlashTests";
+			productReference = FEE5C4B2238634D9007F5784 /* Kanji FlashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEE5C4BC238634D9007F5784 /* Kanji FlashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE5C4CC238634D9007F5784 /* Build configuration list for PBXNativeTarget "Kanji FlashUITests" */;
+			buildPhases = (
+				305358EF58BA31D36403F742 /* [CP] Check Pods Manifest.lock */,
+				FEE5C4B9238634D9007F5784 /* Sources */,
+				FEE5C4BA238634D9007F5784 /* Frameworks */,
+				FEE5C4BB238634D9007F5784 /* Resources */,
+				8F4C95B6E10430A99258BDFF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEE5C4BF238634D9007F5784 /* PBXTargetDependency */,
+			);
+			name = "Kanji FlashUITests";
+			productName = "Kanji FlashUITests";
+			productReference = FEE5C4BD238634D9007F5784 /* Kanji FlashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEE5C494238634D8007F5784 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Elex Lee";
+				TargetAttributes = {
+					FEE5C49B238634D8007F5784 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					FEE5C4B1238634D9007F5784 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = FEE5C49B238634D8007F5784;
+					};
+					FEE5C4BC238634D9007F5784 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = FEE5C49B238634D8007F5784;
+					};
+				};
+			};
+			buildConfigurationList = FEE5C497238634D8007F5784 /* Build configuration list for PBXProject "Kanji Flash" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEE5C493238634D8007F5784;
+			productRefGroup = FEE5C49D238634D8007F5784 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEE5C49B238634D8007F5784 /* Kanji Flash */,
+				FEE5C4B1238634D9007F5784 /* Kanji FlashTests */,
+				FEE5C4BC238634D9007F5784 /* Kanji FlashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEE5C49A238634D8007F5784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE75AAFF23F5EAB20000D1BC /* KanjiList.storyboard in Resources */,
+				FEE5C4AC238634D9007F5784 /* LaunchScreen.storyboard in Resources */,
+				FEE5C4A9238634D9007F5784 /* Assets.xcassets in Resources */,
+				FEE5C4A7238634D8007F5784 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE5C4B0238634D9007F5784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE5C4BB238634D9007F5784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CC1F23E31A170BDDA71583C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kanji FlashTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		305358EF58BA31D36403F742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kanji Flash-Kanji FlashUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F4C95B6E10430A99258BDFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kanji Flash-Kanji FlashUITests/Pods-Kanji Flash-Kanji FlashUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kanji Flash-Kanji FlashUITests/Pods-Kanji Flash-Kanji FlashUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kanji Flash-Kanji FlashUITests/Pods-Kanji Flash-Kanji FlashUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA85B62338A0335CA50107D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kanji Flash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6EF80D4E70E1AD0E5BF410E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kanji Flash/Pods-Kanji Flash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kanji Flash/Pods-Kanji Flash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kanji Flash/Pods-Kanji Flash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9F96F2CCB440906860A9767 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kanji FlashTests/Pods-Kanji FlashTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kanji FlashTests/Pods-Kanji FlashTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kanji FlashTests/Pods-Kanji FlashTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEE5C498238634D8007F5784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE5C4D623864002007F5784 /* KanjiDetailCell.swift in Sources */,
+				FEE5C4A0238634D8007F5784 /* AppDelegate.swift in Sources */,
+				FE712B6B23F546A90040CE2C /* NetworkManager.swift in Sources */,
+				FE84043923F7AA280003EB9E /* KanjiHomeViewController.swift in Sources */,
+				FE75AB0323F5EADF0000D1BC /* KanjiListDataSource.swift in Sources */,
+				FEE5C4D22386367A007F5784 /* KanjiDetailViewController.swift in Sources */,
+				FE75AB0123F5EAD20000D1BC /* KanjiListViewController.swift in Sources */,
+				FE712B6D23F549000040CE2C /* APIManager.swift in Sources */,
+				FEE5C4D423863A5B007F5784 /* KanjiDetailDataSource.swift in Sources */,
+				FEE5C4DC238670F4007F5784 /* UIViewController+KanjiFlash.swift in Sources */,
+				FE75AB0523F5F2170000D1BC /* KanjiListCell.swift in Sources */,
+				FE75AAC123F5690A0000D1BC /* SceneDelegate.swift in Sources */,
+				FEE5C4D0238635AF007F5784 /* Kanji.swift in Sources */,
+				FEE5C4E023867C4D007F5784 /* KanjiManager.swift in Sources */,
+				FEE5C4DA238670C3007F5784 /* UIStoryboard+KanjiFlash.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE5C4AE238634D9007F5784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE5C4B7238634D9007F5784 /* Kanji_FlashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE5C4B9238634D9007F5784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE5C4C2238634D9007F5784 /* Kanji_FlashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEE5C4B4238634D9007F5784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEE5C49B238634D8007F5784 /* Kanji Flash */;
+			targetProxy = FEE5C4B3238634D9007F5784 /* PBXContainerItemProxy */;
+		};
+		FEE5C4BF238634D9007F5784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEE5C49B238634D8007F5784 /* Kanji Flash */;
+			targetProxy = FEE5C4BE238634D9007F5784 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEE5C4A5238634D8007F5784 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEE5C4A6238634D8007F5784 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEE5C4AA238634D9007F5784 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEE5C4AB238634D9007F5784 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEE5C4C4238634D9007F5784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEE5C4C5238634D9007F5784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEE5C4C7238634D9007F5784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE7833C84BD4F5ADD1287B3 /* Pods-Kanji Flash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU4Z69HCZ2;
+				INFOPLIST_FILE = "Kanji Flash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Elex-Lee.Kanji-Flash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEE5C4C8238634D9007F5784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5970645C912ADF9EDBBAAE /* Pods-Kanji Flash.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU4Z69HCZ2;
+				INFOPLIST_FILE = "Kanji Flash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Elex-Lee.Kanji-Flash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEE5C4CA238634D9007F5784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0483BEEDF80BA5FCED176C50 /* Pods-Kanji FlashTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU4Z69HCZ2;
+				INFOPLIST_FILE = "Kanji FlashTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Elex-Lee.Kanji-FlashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kanji Flash.app/Kanji Flash";
+			};
+			name = Debug;
+		};
+		FEE5C4CB238634D9007F5784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F4BBBD551E0EEDEE5D6343 /* Pods-Kanji FlashTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU4Z69HCZ2;
+				INFOPLIST_FILE = "Kanji FlashTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Elex-Lee.Kanji-FlashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kanji Flash.app/Kanji Flash";
+			};
+			name = Release;
+		};
+		FEE5C4CD238634D9007F5784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792865B333FB0154F0460AA6 /* Pods-Kanji Flash-Kanji FlashUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU4Z69HCZ2;
+				INFOPLIST_FILE = "Kanji FlashUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Elex-Lee.Kanji-FlashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kanji Flash";
+			};
+			name = Debug;
+		};
+		FEE5C4CE238634D9007F5784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11F57E9A22AA5ABBB736966 /* Pods-Kanji Flash-Kanji FlashUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU4Z69HCZ2;
+				INFOPLIST_FILE = "Kanji FlashUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Elex-Lee.Kanji-FlashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kanji Flash";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEE5C497238634D8007F5784 /* Build configuration list for PBXProject "Kanji Flash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEE5C4C4238634D9007F5784 /* Debug */,
+				FEE5C4C5238634D9007F5784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEE5C4C6238634D9007F5784 /* Build configuration list for PBXNativeTarget "Kanji Flash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEE5C4C7238634D9007F5784 /* Debug */,
+				FEE5C4C8238634D9007F5784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEE5C4C9238634D9007F5784 /* Build configuration list for PBXNativeTarget "Kanji FlashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEE5C4CA238634D9007F5784 /* Debug */,
+				FEE5C4CB238634D9007F5784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEE5C4CC238634D9007F5784 /* Build configuration list for PBXNativeTarget "Kanji FlashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEE5C4CD238634D9007F5784 /* Debug */,
+				FEE5C4CE238634D9007F5784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEE5C494238634D8007F5784 /* Project object */;
+}

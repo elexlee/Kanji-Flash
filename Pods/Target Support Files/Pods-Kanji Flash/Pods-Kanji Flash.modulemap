@@ -1,0 +1,6 @@
+framework module Pods_Kanji_Flash {
+  umbrella header "Pods-Kanji Flash-umbrella.h"
+
+  export *
+  module * { export * }
+}
